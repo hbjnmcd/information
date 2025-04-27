@@ -1,0 +1,996 @@
+2024-12-15 23:58:58,898 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : I/O error occured while executing PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandProperty AMServiceEnabled.
+java.io.IOException: Cannot run program "powershell": CreateProcess error=2, Не удается найти указанный файл
+	at java.base/java.lang.ProcessBuilder.start(Unknown Source)
+	at java.base/java.lang.ProcessBuilder.start(Unknown Source)
+	at org.knime.product.rcp.startup.WindowsDefenderExceptionHandler.executePowerShellCommand(WindowsDefenderExceptionHandler.java:294)
+	at org.knime.product.rcp.startup.WindowsDefenderExceptionHandler.executePowerShellCommand(WindowsDefenderExceptionHandler.java:285)
+	at org.knime.product.rcp.startup.WindowsDefenderExceptionHandler.isDefenderEnabled(WindowsDefenderExceptionHandler.java:176)
+	at org.knime.product.rcp.startup.WindowsDefenderExceptionHandler.checkForAndAddExceptionToWindowsDefender(WindowsDefenderExceptionHandler.java:142)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:170)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+Caused by: java.io.IOException: CreateProcess error=2, Не удается найти указанный файл
+	at java.base/java.lang.ProcessImpl.create(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(Unknown Source)
+	at java.base/java.lang.ProcessImpl.start(Unknown Source)
+	... 19 more
+2024-12-15 23:59:47,637 : WARN  : comm-pool-thread-1 :  : Node : Excel Reader : 3:1 : Please specify a file
+2024-12-16 00:08:55,159 : WARN  : comm-pool-thread-6 :  : Node : Math Formula (Multi Column) : 3:5 : No configuration available
+2024-12-16 00:22:43,843 : WARN  : main :  : WrappedNodeDialog : Math Formula (Multi Column) : 3:5 : failed to apply settings: Unable to parse m_expression
+Unrecognized symbol "deviation_marriages"
+Unrecognized symbol "mean"
+Unrecognized symbol "SUM"
+Syntax Error (assignment not enabled)
+
+org.knime.core.node.InvalidSettingsException: Unable to parse m_expression
+Unrecognized symbol "deviation_marriages"
+Unrecognized symbol "mean"
+Unrecognized symbol "SUM"
+Syntax Error (assignment not enabled)
+
+	at org.knime.ext.jep.ExpressionParser.parse(ExpressionParser.java:179)
+	at org.knime.ext.jep.ExpressionParser.<init>(ExpressionParser.java:146)
+	at org.knime.ext.jep.multicolumn.MultiColumnJEPNodeModel.createParsersForSelectedColumns(MultiColumnJEPNodeModel.java:296)
+	at org.knime.ext.jep.multicolumn.MultiColumnJEPNodeDialogPane.saveSettingsTo(MultiColumnJEPNodeDialogPane.java:323)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:553)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:792)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2024-12-16 00:24:42,155 : WARN  : comm-pool-thread-8 :  : Node : Math Formula : 3:5 : No configuration available
+2024-12-16 00:28:13,233 : WARN  : main :  : WrappedNodeDialog : Math Formula : 3:5 : failed to apply settings: Unable to parse m_expression
+Unrecognized symbol "mean"
+
+org.knime.core.node.InvalidSettingsException: Unable to parse m_expression
+Unrecognized symbol "mean"
+
+	at org.knime.ext.jep.ExpressionParser.parse(ExpressionParser.java:179)
+	at org.knime.ext.jep.ExpressionParser.<init>(ExpressionParser.java:146)
+	at org.knime.ext.jep.JEPNodeDialogPane.saveSettingsTo(JEPNodeDialogPane.java:354)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:553)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:792)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2024-12-16 00:28:43,288 : WARN  : main :  : WrappedNodeDialog : Math Formula : 3:5 : failed to apply settings: Unable to parse m_expression
+Unrecognized symbol "mean"
+
+org.knime.core.node.InvalidSettingsException: Unable to parse m_expression
+Unrecognized symbol "mean"
+
+	at org.knime.ext.jep.ExpressionParser.parse(ExpressionParser.java:179)
+	at org.knime.ext.jep.ExpressionParser.<init>(ExpressionParser.java:146)
+	at org.knime.ext.jep.JEPNodeDialogPane.saveSettingsTo(JEPNodeDialogPane.java:354)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:553)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:792)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2024-12-16 00:29:58,968 : WARN  : main :  : WrappedNodeDialog : Math Formula : 3:5 : failed to apply settings: Can't parse column name of constant function COL_MEAN
+org.knime.core.node.InvalidSettingsException: Can't parse column name of constant function COL_MEAN
+	at org.knime.ext.jep.ExpressionParser.checkForConstantFunction(ExpressionParser.java:392)
+	at org.knime.ext.jep.ExpressionParser.parse(ExpressionParser.java:156)
+	at org.knime.ext.jep.ExpressionParser.<init>(ExpressionParser.java:146)
+	at org.knime.ext.jep.JEPNodeDialogPane.saveSettingsTo(JEPNodeDialogPane.java:354)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:553)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:792)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2024-12-16 00:31:41,744 : WARN  : comm-pool-thread-11 :  : Node : Math Formula (Multi Column) : 3:6 : No configuration available
+2024-12-16 00:33:28,454 : WARN  : main :  : WrappedNodeDialog : Math Formula (Multi Column) : 3:6 : failed to apply settings: No such column: Marriages_per_1000_lag1
+org.knime.core.node.InvalidSettingsException: No such column: Marriages_per_1000_lag1
+	at org.knime.ext.jep.ExpressionParser.handleColumn(ExpressionParser.java:348)
+	at org.knime.ext.jep.ExpressionParser.dollarFound(ExpressionParser.java:264)
+	at org.knime.ext.jep.ExpressionParser.parse(ExpressionParser.java:171)
+	at org.knime.ext.jep.ExpressionParser.<init>(ExpressionParser.java:146)
+	at org.knime.ext.jep.multicolumn.MultiColumnJEPNodeModel.createParsersForSelectedColumns(MultiColumnJEPNodeModel.java:296)
+	at org.knime.ext.jep.multicolumn.MultiColumnJEPNodeDialogPane.saveSettingsTo(MultiColumnJEPNodeDialogPane.java:323)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:553)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:792)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2024-12-16 00:34:36,789 : WARN  : comm-pool-thread-13 :  : Node : Math Formula : 3:6 : No configuration available
+2024-12-16 00:35:26,335 : WARN  : main :  : Node : Math Formula : 3:6 : No configuration available
+2024-12-16 00:35:28,274 : WARN  : KNIME-Worker-4-Math Formula 3:5 :  : Node : Math Formula : 3:6 : No configuration available
+2024-12-16 00:37:54,138 : WARN  : comm-pool-thread-15 :  : Node : Math Formula : 3:7 : No configuration available
+2024-12-16 00:39:06,134 : WARN  : comm-pool-thread-16 :  : Node : Math Formula : 3:8 : No configuration available
+2024-12-16 00:39:36,619 : WARN  : comm-pool-thread-15 :  : Node : Math Formula : 3:9 : No configuration available
+2024-12-16 00:41:48,164 : WARN  : comm-pool-thread-15 :  : Node : Math Formula : 3:10 : No configuration available
+2024-12-16 00:42:58,994 : WARN  : comm-pool-thread-15 :  : Node : GroupBy : 3:10 : No grouping column included. Aggregate complete table.
+2024-12-16 00:42:58,995 : WARN  : comm-pool-thread-15 :  : Node : GroupBy : 3:10 : No aggregation column defined
+2024-12-16 00:42:59,048 : WARN  : comm-pool-thread-15 :  : Node : GroupBy : 3:10 : Please select at least one group or aggregation column
+2024-12-16 00:43:03,154 : WARN  : comm-pool-thread-15 :  : Node : GroupBy : 3:10 : No grouping column included. Aggregate complete table.
+2024-12-16 00:43:03,155 : WARN  : comm-pool-thread-15 :  : Node : GroupBy : 3:10 : No aggregation column defined
+2024-12-16 00:43:03,155 : WARN  : comm-pool-thread-15 :  : Node : GroupBy : 3:10 : Please select at least one group or aggregation column
+2024-12-16 00:43:06,933 : WARN  : comm-pool-thread-15 :  : Node : GroupBy : 3:10 : No grouping column included. Aggregate complete table.
+2024-12-16 00:43:06,934 : WARN  : comm-pool-thread-15 :  : Node : GroupBy : 3:10 : No aggregation column defined
+2024-12-16 00:43:06,934 : WARN  : comm-pool-thread-15 :  : Node : GroupBy : 3:10 : Please select at least one group or aggregation column
+2024-12-16 00:44:46,878 : WARN  : main :  : Node : GroupBy : 3:10 : No aggregation column defined
+2024-12-16 00:44:47,894 : WARN  : main :  : Node : GroupBy : 3:10 : No aggregation column defined
+2024-12-16 00:50:22,276 : WARN  : main :  : Node : GroupBy : 3:10 : No grouping column included. Aggregate complete table.
+2024-12-16 00:50:58,223 : WARN  : comm-pool-thread-21 :  : Node : Math Formula : 3:11 : No configuration available
+2024-12-16 00:51:01,101 : WARN  : comm-pool-thread-21 :  : Node : Math Formula : 3:11 : No configuration available
+2024-12-16 00:51:56,276 : WARN  : main :  : Node : GroupBy : 3:10 : No grouping column included. Aggregate complete table.
+2024-12-16 00:52:15,613 : WARN  : main :  : Node : GroupBy : 3:10 : No grouping column included. Aggregate complete table.
+2024-12-16 00:52:37,043 : WARN  : main :  : Node : GroupBy : 3:10 : No grouping column included. Aggregate complete table.
+2024-12-16 00:52:43,680 : WARN  : main :  : Node : GroupBy : 3:10 : No grouping column included. Aggregate complete table.
+2024-12-16 00:55:00,813 : WARN  : comm-pool-thread-23 :  : Node : GroupBy : 3:10 : No grouping column included. Aggregate complete table.
+2024-12-16 00:55:07,928 : WARN  : main :  : Node : GroupBy : 3:10 : No grouping column included. Aggregate complete table.
+2024-12-16 00:55:56,331 : WARN  : main :  : Node : GroupBy : 3:10 : No grouping column included. Aggregate complete table.
+2024-12-16 00:56:14,517 : WARN  : main :  : Node : GroupBy : 3:10 : No grouping column included. Aggregate complete table.
+2024-12-16 00:56:43,912 : WARN  : main :  : Node : Math Formula : 3:9 : No such column: deviation_lag
+2024-12-16 00:56:55,022 : WARN  : main :  : Node : Math Formula : 3:9 : No such column: deviation_lag
+2024-12-16 00:57:10,503 : WARN  : main :  : Node : Math Formula : 3:9 : No such column: deviation_lag
+2024-12-16 00:57:11,829 : WARN  : KNIME-Worker-9-Math Formula 3:8 :  : Node : Math Formula : 3:9 : No such column: deviation_lag
+2024-12-16 00:57:59,277 : WARN  : main :  : Node : Math Formula : 3:9 : No such column: deviation_lag
+2024-12-16 00:58:33,797 : WARN  : main :  : Node : Math Formula : 3:9 : No such column: deviation_lag
+2024-12-16 00:58:38,860 : WARN  : KNIME-Worker-9-Math Formula 3:8 :  : Node : Math Formula : 3:9 : No such column: deviation_lag
+2024-12-16 00:58:47,355 : WARN  : main :  : WrappedNodeDialog : Math Formula : 3:9 : failed to apply settings: No such column: deviation_lag
+org.knime.core.node.InvalidSettingsException: No such column: deviation_lag
+	at org.knime.ext.jep.ExpressionParser.handleColumn(ExpressionParser.java:348)
+	at org.knime.ext.jep.ExpressionParser.dollarFound(ExpressionParser.java:264)
+	at org.knime.ext.jep.ExpressionParser.parse(ExpressionParser.java:171)
+	at org.knime.ext.jep.ExpressionParser.<init>(ExpressionParser.java:146)
+	at org.knime.ext.jep.JEPNodeDialogPane.saveSettingsTo(JEPNodeDialogPane.java:354)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:553)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:792)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2024-12-16 00:58:58,018 : WARN  : main :  : Node : GroupBy : 3:10 : No grouping column included. Aggregate complete table.
+2024-12-16 00:58:59,692 : WARN  : KNIME-Worker-9-Math Formula 3:9 :  : Node : GroupBy : 3:10 : No grouping column included. Aggregate complete table.
+2024-12-16 00:59:49,291 : WARN  : main :  : Node : GroupBy : 3:10 : No grouping column included. Aggregate complete table.
+2024-12-16 01:01:11,749 : WARN  : comm-pool-thread-26 :  : Node : Math Formula : 3:13 : No such column: deviation_births
+2024-12-16 01:02:09,471 : WARN  : main :  : WrappedNodeDialog : Math Formula : 3:13 : failed to apply settings: Unable to parse m_expression
+Unrecognized symbol "SQRT"
+Unrecognized symbol "SQRT"
+
+org.knime.core.node.InvalidSettingsException: Unable to parse m_expression
+Unrecognized symbol "SQRT"
+Unrecognized symbol "SQRT"
+
+	at org.knime.ext.jep.ExpressionParser.parse(ExpressionParser.java:179)
+	at org.knime.ext.jep.ExpressionParser.<init>(ExpressionParser.java:146)
+	at org.knime.ext.jep.JEPNodeDialogPane.saveSettingsTo(JEPNodeDialogPane.java:354)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:553)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:792)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2024-12-16 01:04:01,870 : WARN  : comm-pool-thread-28 :  : Node : Math Formula : 3:21 : No such column: Births_per_1000(-1)
+2024-12-16 01:04:09,385 : WARN  : comm-pool-thread-28 :  : Node : Math Formula : 3:19 : No such column: Births_per_1000
+2024-12-16 01:04:11,261 : WARN  : KNIME-Worker-10-Column Filter 3:15 :  : Node : Math Formula : 3:19 : No such column: Births_per_1000
+2024-12-16 01:04:31,423 : WARN  : main :  : Node : Math Formula : 3:21 : No such column: Births_per_1000(-1)
+2024-12-16 01:04:32,929 : WARN  : KNIME-Worker-11-Math Formula 3:19 :  : Node : Math Formula : 3:21 : No such column: Births_per_1000(-1)
+2024-12-16 01:04:47,247 : WARN  : main :  : Node : Math Formula : 3:14 : No such column: deviation_births
+2024-12-16 01:04:48,790 : WARN  : KNIME-Worker-12-Math Formula 3:21 :  : Node : Math Formula : 3:14 : No such column: deviation_births
+2024-12-16 01:06:27,999 : WARN  : comm-pool-thread-28 :  : Node : Row Filter : 3:22 : At least one filter criterion is needed.
+2024-12-16 01:07:21,032 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:22 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:12, 3:13, 3:14, 3:15, 3:16, 3:17, 3:18, 3:19, 3:20, 3:21] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-12-16 01:07:21,032 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:22 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:12, 3:13, 3:14, 3:15, 3:16, 3:17, 3:18, 3:19, 3:20, 3:21] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-12-16 01:07:37,543 : WARN  : comm-pool-thread-28 :  : Node : Row Filter : 3:22 : At least one filter criterion is needed.
+2024-12-16 01:08:26,357 : WARN  : comm-pool-thread-28 :  : Node : GroupBy : 3:10 : No grouping column included. Aggregate complete table.
+2024-12-16 01:08:32,752 : WARN  : KNIME-Worker-18-Math Formula 3:9 :  : Node : GroupBy : 3:10 : No grouping column included. Aggregate complete table.
+2024-12-16 01:09:29,535 : WARN  : comm-pool-thread-28 :  : Node : Math Formula : 3:14 : No such column: deviation_births
+2024-12-16 01:09:32,161 : WARN  : main :  : Node : Math Formula : 3:14 : No such column: deviation_births
+2024-12-16 01:09:36,576 : WARN  : main :  : Node : Math Formula : 3:14 : No such column: deviation_births
+2024-12-16 01:09:37,739 : WARN  : KNIME-Worker-16-Math Formula 3:21 :  : Node : Math Formula : 3:14 : No such column: deviation_births
+2024-12-16 01:09:47,414 : WARN  : main :  : Node : Math Formula : 3:16 : No such column: deviation_births
+2024-12-16 01:09:48,829 : WARN  : KNIME-Worker-17-Math Formula 3:14 :  : Node : Math Formula : 3:16 : No such column: deviation_births
+2024-12-16 01:09:59,415 : WARN  : main :  : Node : GroupBy : 3:20 : No grouping column included. Aggregate complete table.
+2024-12-16 01:10:08,845 : WARN  : main :  : Node : GroupBy : 3:20 : No grouping column included. Aggregate complete table.
+2024-12-16 01:10:10,603 : WARN  : KNIME-Worker-19-Math Formula 3:18 :  : Node : GroupBy : 3:20 : No grouping column included. Aggregate complete table.
+2024-12-16 01:10:28,288 : WARN  : main :  : Node : GroupBy : 3:20 : No grouping column included. Aggregate complete table.
+2024-12-16 01:11:23,761 : WARN  : main :  : Node : GroupBy : 3:20 : No grouping column included. Aggregate complete table.
+2024-12-16 01:11:23,762 : WARN  : main :  : Node : GroupBy : 3:20 : 1 invalid aggregation column(s) found.
+2024-12-16 01:11:23,763 : WARN  : main :  : Node : Math Formula : 3:17 : No such column: Sum(squared_deviation_births)
+2024-12-16 01:11:29,268 : WARN  : main :  : Node : GroupBy : 3:20 : No grouping column included. Aggregate complete table.
+2024-12-16 01:11:29,268 : WARN  : main :  : Node : GroupBy : 3:20 : 1 invalid aggregation column(s) found.
+2024-12-16 01:11:29,269 : WARN  : main :  : Node : Math Formula : 3:17 : No such column: Sum(squared_deviation_births)
+2024-12-16 01:11:30,667 : WARN  : KNIME-Worker-21-Math Formula 3:18 :  : Node : GroupBy : 3:20 : No grouping column included. Aggregate complete table.
+2024-12-16 01:11:30,668 : WARN  : KNIME-Worker-21-Math Formula 3:18 :  : Node : GroupBy : 3:20 : 1 invalid aggregation column(s) found.
+2024-12-16 01:11:48,623 : WARN  : main :  : Node : GroupBy : 3:20 : No grouping column included. Aggregate complete table.
+2024-12-16 01:11:48,623 : WARN  : main :  : Node : Math Formula : 3:17 : No such column: Sum(squared_deviation_births)
+2024-12-16 01:11:50,099 : WARN  : KNIME-Worker-22-GroupBy 3:20 :  : Node : Math Formula : 3:17 : No such column: Sum(squared_deviation_births)
+2024-12-16 01:27:10,039 : WARN  : comm-pool-thread-35 :  : Node : Linear Correlation : 3:26 : Auto configuration: Using all suitable columns (in total 4)
+2024-12-16 01:27:32,383 : WARN  : KNIME-Worker-30-Linear Correlation 3:26 :  : Node : Linear Correlation : 3:26 : Some numeric column(s) contained missing values: "Year", "Marriages_per_1000"
+2024-12-16 01:27:49,844 : WARN  : KNIME-Worker-31-Linear Correlation 3:26 :  : Node : Linear Correlation : 3:26 : Some numeric column(s) contained missing values: "Marriages_per_1000", "Births_per_1000"
+2024-12-16 01:34:09,193 : ERROR : KNIME-Worker-35-Polynomial Regression Learner 3:24 :  : Node : Polynomial Regression Learner : 3:24 : Execute failed: Missing value support disabled, see node configuration dialog.
+java.lang.IllegalStateException: Missing value support disabled, see node configuration dialog.
+	at org.knime.base.node.mine.regression.RegressionTrainingRow$MissingHandling.isMissing(RegressionTrainingRow.java:93)
+	at org.knime.base.node.mine.regression.RegressionTrainingRow.<init>(RegressionTrainingRow.java:184)
+	at org.knime.base.node.mine.regression.RegressionTrainingDataIterator.next(RegressionTrainingDataIterator.java:138)
+	at org.knime.base.node.mine.regression.RegressionTrainingDataIterator.next(RegressionTrainingDataIterator.java:1)
+	at org.knime.base.node.mine.regression.polynomial.learner2.Learner.processTable(Learner.java:162)
+	at org.knime.base.node.mine.regression.polynomial.learner2.Learner.perform(Learner.java:128)
+	at org.knime.base.node.mine.regression.polynomial.learner2.PolyRegLearnerNodeModel.execute(PolyRegLearnerNodeModel.java:254)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-12-16 01:34:11,489 : ERROR : KNIME-Worker-36-Polynomial Regression Learner 3:24 :  : Node : Polynomial Regression Learner : 3:24 : Execute failed: Missing value support disabled, see node configuration dialog.
+java.lang.IllegalStateException: Missing value support disabled, see node configuration dialog.
+	at org.knime.base.node.mine.regression.RegressionTrainingRow$MissingHandling.isMissing(RegressionTrainingRow.java:93)
+	at org.knime.base.node.mine.regression.RegressionTrainingRow.<init>(RegressionTrainingRow.java:184)
+	at org.knime.base.node.mine.regression.RegressionTrainingDataIterator.next(RegressionTrainingDataIterator.java:138)
+	at org.knime.base.node.mine.regression.RegressionTrainingDataIterator.next(RegressionTrainingDataIterator.java:1)
+	at org.knime.base.node.mine.regression.polynomial.learner2.Learner.processTable(Learner.java:162)
+	at org.knime.base.node.mine.regression.polynomial.learner2.Learner.perform(Learner.java:128)
+	at org.knime.base.node.mine.regression.polynomial.learner2.PolyRegLearnerNodeModel.execute(PolyRegLearnerNodeModel.java:254)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-12-16 01:34:19,426 : ERROR : KNIME-Worker-37-Polynomial Regression Learner 3:24 :  : Node : Polynomial Regression Learner : 3:24 : Execute failed: Missing value support disabled, see node configuration dialog.
+java.lang.IllegalStateException: Missing value support disabled, see node configuration dialog.
+	at org.knime.base.node.mine.regression.RegressionTrainingRow$MissingHandling.isMissing(RegressionTrainingRow.java:93)
+	at org.knime.base.node.mine.regression.RegressionTrainingRow.<init>(RegressionTrainingRow.java:184)
+	at org.knime.base.node.mine.regression.RegressionTrainingDataIterator.next(RegressionTrainingDataIterator.java:138)
+	at org.knime.base.node.mine.regression.RegressionTrainingDataIterator.next(RegressionTrainingDataIterator.java:1)
+	at org.knime.base.node.mine.regression.polynomial.learner2.Learner.processTable(Learner.java:162)
+	at org.knime.base.node.mine.regression.polynomial.learner2.Learner.perform(Learner.java:128)
+	at org.knime.base.node.mine.regression.polynomial.learner2.PolyRegLearnerNodeModel.execute(PolyRegLearnerNodeModel.java:254)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-12-16 01:41:40,691 : WARN  : KNIME-Worker-44-Concatenate 3:31 :  : AppendedRowsIterator : Concatenate : 3:31 : Table contains duplicate entry "Row0", skipping this row. Suppress further warnings.
+2024-12-16 01:41:40,695 : WARN  : KNIME-Worker-44-Concatenate 3:31 :  : Node : Concatenate : 3:31 : Filtered out 23 duplicate row(s).
+2024-12-16 01:41:56,586 : ERROR : KNIME-Worker-45-Concatenate 3:31 :  : Node : Concatenate : 3:31 : Execute failed: Duplicate RowID 'Row0' in table with index 1.
+java.lang.IllegalArgumentException: Duplicate RowID 'Row0' in table with index 1.
+	at org.knime.core.data.container.ConcatenateTable.checkForDuplicates(ConcatenateTable.java:370)
+	at org.knime.core.data.container.ConcatenateTable.create(ConcatenateTable.java:342)
+	at org.knime.core.data.container.BufferedTableBackend.concatenate(BufferedTableBackend.java:151)
+	at org.knime.core.node.ExecutionContext.createConcatenateTable(ExecutionContext.java:594)
+	at org.knime.base.node.preproc.append.row.AppendedRowsNodeModel.execute(AppendedRowsNodeModel.java:203)
+	at org.knime.core.node.NodeModel.execute(NodeModel.java:812)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: org.knime.core.util.DuplicateKeyException: Duplicate key detected: "Row0"
+	at org.knime.core.util.DuplicateChecker.addKey(DuplicateChecker.java:258)
+	at org.knime.core.data.container.ConcatenateTable.checkForDuplicates(ConcatenateTable.java:368)
+	... 18 more
+2024-12-16 01:42:04,067 : ERROR : KNIME-Worker-46-Concatenate 3:31 :  : Node : Concatenate : 3:31 : Execute failed: Duplicate RowID 'Row0' in table with index 1.
+java.lang.IllegalArgumentException: Duplicate RowID 'Row0' in table with index 1.
+	at org.knime.core.data.container.ConcatenateTable.checkForDuplicates(ConcatenateTable.java:370)
+	at org.knime.core.data.container.ConcatenateTable.create(ConcatenateTable.java:342)
+	at org.knime.core.data.container.BufferedTableBackend.concatenate(BufferedTableBackend.java:151)
+	at org.knime.core.node.ExecutionContext.createConcatenateTable(ExecutionContext.java:594)
+	at org.knime.base.node.preproc.append.row.AppendedRowsNodeModel.execute(AppendedRowsNodeModel.java:203)
+	at org.knime.core.node.NodeModel.execute(NodeModel.java:812)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: org.knime.core.util.DuplicateKeyException: Duplicate key detected: "Row0"
+	at org.knime.core.util.DuplicateChecker.addKey(DuplicateChecker.java:258)
+	at org.knime.core.data.container.ConcatenateTable.checkForDuplicates(ConcatenateTable.java:368)
+	... 18 more
+2024-12-16 01:42:04,890 : ERROR : KNIME-Worker-47-Concatenate 3:31 :  : Node : Concatenate : 3:31 : Execute failed: Duplicate RowID 'Row0' in table with index 1.
+java.lang.IllegalArgumentException: Duplicate RowID 'Row0' in table with index 1.
+	at org.knime.core.data.container.ConcatenateTable.checkForDuplicates(ConcatenateTable.java:370)
+	at org.knime.core.data.container.ConcatenateTable.create(ConcatenateTable.java:342)
+	at org.knime.core.data.container.BufferedTableBackend.concatenate(BufferedTableBackend.java:151)
+	at org.knime.core.node.ExecutionContext.createConcatenateTable(ExecutionContext.java:594)
+	at org.knime.base.node.preproc.append.row.AppendedRowsNodeModel.execute(AppendedRowsNodeModel.java:203)
+	at org.knime.core.node.NodeModel.execute(NodeModel.java:812)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: org.knime.core.util.DuplicateKeyException: Duplicate key detected: "Row0"
+	at org.knime.core.util.DuplicateChecker.addKey(DuplicateChecker.java:258)
+	at org.knime.core.data.container.ConcatenateTable.checkForDuplicates(ConcatenateTable.java:368)
+	... 18 more
+2024-12-16 01:42:11,871 : ERROR : KNIME-Worker-43-Concatenate 3:31 :  : Node : Concatenate : 3:31 : Execute failed: Duplicate RowID 'Row0' in table with index 1.
+java.lang.IllegalArgumentException: Duplicate RowID 'Row0' in table with index 1.
+	at org.knime.core.data.container.ConcatenateTable.checkForDuplicates(ConcatenateTable.java:370)
+	at org.knime.core.data.container.ConcatenateTable.create(ConcatenateTable.java:342)
+	at org.knime.core.data.container.BufferedTableBackend.concatenate(BufferedTableBackend.java:151)
+	at org.knime.core.node.ExecutionContext.createConcatenateTable(ExecutionContext.java:594)
+	at org.knime.base.node.preproc.append.row.AppendedRowsNodeModel.execute(AppendedRowsNodeModel.java:203)
+	at org.knime.core.node.NodeModel.execute(NodeModel.java:812)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+Caused by: org.knime.core.util.DuplicateKeyException: Duplicate key detected: "Row0"
+	at org.knime.core.util.DuplicateChecker.addKey(DuplicateChecker.java:258)
+	at org.knime.core.data.container.ConcatenateTable.checkForDuplicates(ConcatenateTable.java:368)
+	... 18 more
+2024-12-16 01:43:07,907 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:31 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:12, 3:13, 3:14, 3:15, 3:16, 3:17, 3:18, 3:19, 3:20, 3:21, 3:22, 3:23, 3:24, 3:26, 3:28, 3:29, 3:30] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-12-16 01:43:07,912 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:31 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:12, 3:13, 3:14, 3:15, 3:16, 3:17, 3:18, 3:19, 3:20, 3:21, 3:22, 3:23, 3:24, 3:26, 3:28, 3:29, 3:30] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-12-16 08:41:08,821 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : I/O error occured while executing PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandProperty AMServiceEnabled.
+java.io.IOException: Cannot run program "powershell": CreateProcess error=2, Не удается найти указанный файл
+	at java.base/java.lang.ProcessBuilder.start(Unknown Source)
+	at java.base/java.lang.ProcessBuilder.start(Unknown Source)
+	at org.knime.product.rcp.startup.WindowsDefenderExceptionHandler.executePowerShellCommand(WindowsDefenderExceptionHandler.java:294)
+	at org.knime.product.rcp.startup.WindowsDefenderExceptionHandler.executePowerShellCommand(WindowsDefenderExceptionHandler.java:285)
+	at org.knime.product.rcp.startup.WindowsDefenderExceptionHandler.isDefenderEnabled(WindowsDefenderExceptionHandler.java:176)
+	at org.knime.product.rcp.startup.WindowsDefenderExceptionHandler.checkForAndAddExceptionToWindowsDefender(WindowsDefenderExceptionHandler.java:142)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:170)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+Caused by: java.io.IOException: CreateProcess error=2, Не удается найти указанный файл
+	at java.base/java.lang.ProcessImpl.create(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(Unknown Source)
+	at java.base/java.lang.ProcessImpl.start(Unknown Source)
+	... 19 more
+2024-12-17 20:52:52,466 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : I/O error occured while executing PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandProperty AMServiceEnabled.
+java.io.IOException: Cannot run program "powershell": CreateProcess error=2, Не удается найти указанный файл
+	at java.base/java.lang.ProcessBuilder.start(Unknown Source)
+	at java.base/java.lang.ProcessBuilder.start(Unknown Source)
+	at org.knime.product.rcp.startup.WindowsDefenderExceptionHandler.executePowerShellCommand(WindowsDefenderExceptionHandler.java:294)
+	at org.knime.product.rcp.startup.WindowsDefenderExceptionHandler.executePowerShellCommand(WindowsDefenderExceptionHandler.java:285)
+	at org.knime.product.rcp.startup.WindowsDefenderExceptionHandler.isDefenderEnabled(WindowsDefenderExceptionHandler.java:176)
+	at org.knime.product.rcp.startup.WindowsDefenderExceptionHandler.checkForAndAddExceptionToWindowsDefender(WindowsDefenderExceptionHandler.java:142)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:170)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+Caused by: java.io.IOException: CreateProcess error=2, Не удается найти указанный файл
+	at java.base/java.lang.ProcessImpl.create(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(Unknown Source)
+	at java.base/java.lang.ProcessImpl.start(Unknown Source)
+	... 19 more
+2024-12-17 20:53:31,576 : WARN  : comm-pool-thread-1 :  : Node : Excel Reader : 3:1 : Please specify a file
+2024-12-17 20:53:58,476 : WARN  : main :  : Node : Excel Reader : 3:1 : The node configuration changed and the table spec will be recalculated during execution.
+2024-12-17 20:53:59,183 : WARN  : main :  : Node : Excel Reader : 3:1 : The node configuration changed and the table spec will be recalculated during execution.
+2024-12-17 21:01:25,111 : WARN  : comm-pool-thread-6 :  : Node : Linear Correlation : 3:4 : Auto configuration: Using all suitable columns (in total 4)
+2024-12-17 21:06:47,226 : WARN  : comm-pool-thread-8 :  : Node : Numeric Scorer : 3:5 : No columns selected for reference
+2024-12-17 21:09:47,938 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:5 valid [3:1, 3:2, 3:3, 3:4] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-12-17 21:09:47,938 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:5 valid [3:1, 3:2, 3:3, 3:4] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-12-17 21:10:04,129 : WARN  : comm-pool-thread-10 :  : Node : Row Filter : 3:5 : At least one filter criterion is needed.
+2024-12-17 21:10:46,439 : WARN  : KNIME-Worker-17-Row Filter 3:5 :  : Node : Row Filter : 3:5 : Node created an empty data table.
+2024-12-17 21:11:38,162 : WARN  : KNIME-Worker-17-Row Filter 3:5 :  : Node : Row Filter : 3:5 : Node created an empty data table.
+2024-12-17 21:49:01,273 : WARN  : comm-pool-thread-17 :  : JsonRpcErrorResolver :  :  : An unexpected json rpc error occurred
+java.lang.IllegalStateException: A default service couldn't be initialized: org.knime.gateway.impl.webui.service.DefaultEventService
+	at org.knime.gateway.impl.webui.service.ServiceInstances$1.initialize(ServiceInstances.java:129)
+	at org.knime.gateway.impl.webui.service.ServiceInstances$1.initialize(ServiceInstances.java:1)
+	at org.apache.commons.lang3.concurrent.LazyInitializer.get(LazyInitializer.java:143)
+	at org.knime.gateway.impl.webui.service.ServiceInstances.getDefaultServiceInstance(ServiceInstances.java:134)
+	at org.knime.gateway.impl.webui.service.ServiceInstances.lambda$0(ServiceInstances.java:114)
+	at org.knime.gateway.impl.webui.jsonrpc.service.JsonRpcEventServiceWrapper.removeEventListener(JsonRpcEventServiceWrapper.java:93)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.invoke(JsonRpcBasicServer.java:478)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleObject(JsonRpcBasicServer.java:349)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleJsonNodeRequest(JsonRpcBasicServer.java:274)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleRequest(JsonRpcBasicServer.java:242)
+	at org.knime.gateway.impl.jsonrpc.JsonRpcRequestHandler.handle(JsonRpcRequestHandler.java:104)
+	at org.knime.ui.java.browser.lifecycle.Init.lambda$11(Init.java:296)
+	at com.equo.comm.common.MessageHandler.processReceivedEventMessage(MessageHandler.java:131)
+	at com.equo.comm.ee.provider.service.ChromiumService.receiveMessage(ChromiumService.java:98)
+	at com.equo.comm.ee.provider.CommunicationManagerChromiumImpl.receiveMessage(CommunicationManagerChromiumImpl.java:48)
+	at com.equo.chromium.swt.internal.spi.CommRouterHandler.handleRequest(CommRouterHandler.java:33)
+	at com.equo.chromium.swt.internal.spi.CommRouterHandler.lambda$1(CommRouterHandler.java:51)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.knime.gateway.impl.webui.service.ServiceInstances$1.initialize(ServiceInstances.java:126)
+	... 23 more
+Caused by: java.lang.IllegalStateException: No instance for class org.knime.gateway.impl.webui.service.events.EventConsumer given but required as a service dependency
+	at org.knime.gateway.impl.webui.service.ServiceDependencies.getServiceDependency(ServiceDependencies.java:106)
+	at org.knime.gateway.impl.webui.service.DefaultEventService.<init>(DefaultEventService.java:91)
+	... 29 more
+2024-12-17 21:49:01,286 : WARN  : comm-pool-thread-18 :  : JsonRpcErrorResolver :  :  : An unexpected json rpc error occurred
+java.lang.IllegalStateException: A default service couldn't be initialized: org.knime.gateway.impl.webui.service.DefaultSpaceService
+	at org.knime.gateway.impl.webui.service.ServiceInstances$1.initialize(ServiceInstances.java:129)
+	at org.knime.gateway.impl.webui.service.ServiceInstances$1.initialize(ServiceInstances.java:1)
+	at org.apache.commons.lang3.concurrent.LazyInitializer.get(LazyInitializer.java:143)
+	at org.knime.gateway.impl.webui.service.ServiceInstances.getDefaultServiceInstance(ServiceInstances.java:134)
+	at org.knime.gateway.impl.webui.service.ServiceInstances.lambda$0(ServiceInstances.java:114)
+	at org.knime.gateway.impl.webui.jsonrpc.service.JsonRpcSpaceServiceWrapper.listWorkflowGroup(JsonRpcSpaceServiceWrapper.java:218)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.invoke(JsonRpcBasicServer.java:478)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleObject(JsonRpcBasicServer.java:349)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleJsonNodeRequest(JsonRpcBasicServer.java:274)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleRequest(JsonRpcBasicServer.java:242)
+	at org.knime.gateway.impl.jsonrpc.JsonRpcRequestHandler.handle(JsonRpcRequestHandler.java:104)
+	at org.knime.ui.java.browser.lifecycle.Init.lambda$11(Init.java:296)
+	at com.equo.comm.common.MessageHandler.processReceivedEventMessage(MessageHandler.java:131)
+	at com.equo.comm.ee.provider.service.ChromiumService.receiveMessage(ChromiumService.java:98)
+	at com.equo.comm.ee.provider.CommunicationManagerChromiumImpl.receiveMessage(CommunicationManagerChromiumImpl.java:48)
+	at com.equo.chromium.swt.internal.spi.CommRouterHandler.handleRequest(CommRouterHandler.java:33)
+	at com.equo.chromium.swt.internal.spi.CommRouterHandler.lambda$1(CommRouterHandler.java:51)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.knime.gateway.impl.webui.service.ServiceInstances$1.initialize(ServiceInstances.java:126)
+	... 23 more
+Caused by: java.lang.IllegalStateException: No instance for class org.knime.gateway.impl.webui.spaces.SpaceProviders given but required as a service dependency
+	at org.knime.gateway.impl.webui.service.ServiceDependencies.getServiceDependency(ServiceDependencies.java:106)
+	at org.knime.gateway.impl.webui.service.DefaultSpaceService.<init>(DefaultSpaceService.java:91)
+	... 29 more
+2024-12-17 21:49:01,870 : ERROR : Clear OSGi configuration :  : InvokeInstallSiteAction :  :  : Could not clean OSGi configuration area: C:\Users\mi\Desktop\knime_5.3.2\configuration\org.eclipse.osgi\141\0\.cp\os\win32\x86_64\localfile_1_0_0.dll
+2024-12-17 21:49:50,259 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : I/O error occured while executing PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-MpComputerStatus -ErrorAction Stop | Select-Object -ExpandProperty AMServiceEnabled.
+java.io.IOException: Cannot run program "powershell": CreateProcess error=2, Не удается найти указанный файл
+	at java.base/java.lang.ProcessBuilder.start(Unknown Source)
+	at java.base/java.lang.ProcessBuilder.start(Unknown Source)
+	at org.knime.product.rcp.startup.WindowsDefenderExceptionHandler.executePowerShellCommand(WindowsDefenderExceptionHandler.java:294)
+	at org.knime.product.rcp.startup.WindowsDefenderExceptionHandler.executePowerShellCommand(WindowsDefenderExceptionHandler.java:285)
+	at org.knime.product.rcp.startup.WindowsDefenderExceptionHandler.isDefenderEnabled(WindowsDefenderExceptionHandler.java:176)
+	at org.knime.product.rcp.startup.WindowsDefenderExceptionHandler.checkForAndAddExceptionToWindowsDefender(WindowsDefenderExceptionHandler.java:142)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:170)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+Caused by: java.io.IOException: CreateProcess error=2, Не удается найти указанный файл
+	at java.base/java.lang.ProcessImpl.create(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(Unknown Source)
+	at java.base/java.lang.ProcessImpl.start(Unknown Source)
+	... 19 more
+2024-12-17 21:50:40,669 : WARN  : comm-pool-thread-1 :  : Node : ARIMA Learner : 3:7 : Auto guessing: using column "Year".
+2024-12-17 21:53:04,325 : WARN  : comm-pool-thread-2 :  : Node : ARIMA Predictor : 3:8 : The column used to train the model is not present in the input table or it was not selected in the configuration dialog.
+2024-12-17 21:53:16,096 : ERROR : KNIME-Worker-1-ARIMA Predictor 3:8 :  : Node : ARIMA Predictor : 3:8 : Execute failed: The column used to train the model (Year) is not the same as the specified: Births_per_1000
+org.knime.core.node.InvalidSettingsException: The column used to train the model (Year) is not the same as the specified: Births_per_1000
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:273)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:223)
+	at org.knime.arima.node.predictor.ARIMAPredictorNodeModel.execute(ARIMAPredictorNodeModel.java:126)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-12-17 21:53:19,714 : ERROR : KNIME-Worker-1-ARIMA Predictor 3:8 :  : Node : ARIMA Predictor : 3:8 : Execute failed: The column used to train the model (Year) is not the same as the specified: Births_per_1000
+org.knime.core.node.InvalidSettingsException: The column used to train the model (Year) is not the same as the specified: Births_per_1000
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:273)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:223)
+	at org.knime.arima.node.predictor.ARIMAPredictorNodeModel.execute(ARIMAPredictorNodeModel.java:126)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-12-17 21:53:55,207 : ERROR : KNIME-Worker-1-ARIMA Predictor 3:8 :  : Node : ARIMA Predictor : 3:8 : Execute failed: The column used to train the model (Year) is not the same as the specified: Births_per_1000
+org.knime.core.node.InvalidSettingsException: The column used to train the model (Year) is not the same as the specified: Births_per_1000
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:273)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:223)
+	at org.knime.arima.node.predictor.ARIMAPredictorNodeModel.execute(ARIMAPredictorNodeModel.java:126)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-12-17 21:54:10,293 : ERROR : KNIME-Worker-1-ARIMA Predictor 3:8 :  : Node : ARIMA Predictor : 3:8 : Execute failed: The column used to train the model (Year) is not the same as the specified: Births_per_1000
+org.knime.core.node.InvalidSettingsException: The column used to train the model (Year) is not the same as the specified: Births_per_1000
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:273)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:223)
+	at org.knime.arima.node.predictor.ARIMAPredictorNodeModel.execute(ARIMAPredictorNodeModel.java:126)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-12-17 21:58:10,943 : ERROR : KNIME-Worker-3-ARIMA Predictor 3:8 :  : Node : ARIMA Predictor : 3:8 : Execute failed: The column used to train the model (Year) is not the same as the specified: Births_per_1000
+org.knime.core.node.InvalidSettingsException: The column used to train the model (Year) is not the same as the specified: Births_per_1000
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:273)
+	at org.knime.core.node.util.CheckUtils.checkSetting(CheckUtils.java:223)
+	at org.knime.arima.node.predictor.ARIMAPredictorNodeModel.execute(ARIMAPredictorNodeModel.java:126)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-12-17 22:07:30,724 : WARN  : comm-pool-thread-10 :  : Node : Constant Value Column : 3:12 : Configuration missing.
+2024-12-17 22:08:22,798 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:12 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-12-17 22:08:22,798 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:12 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-12-17 22:08:52,593 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:12 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-12-17 22:08:52,594 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:12 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-12-17 22:11:10,002 : ERROR : KNIME-Worker-9-Column Appender 3:12 :  : Node : Column Appender : 3:12 : Execute failed: Tables can't be joined, non matching row counts: 31 vs. 24
+java.lang.IllegalArgumentException: Tables can't be joined, non matching row counts: 31 vs. 24
+	at org.knime.core.data.container.JoinedTable.create(JoinedTable.java:303)
+	at org.knime.core.data.container.JoinedTable.create(JoinedTable.java:281)
+	at org.knime.core.data.container.BufferedTableBackend.append(BufferedTableBackend.java:168)
+	at org.knime.core.node.ExecutionContext.createJoinedTable(ExecutionContext.java:642)
+	at org.knime.base.node.preproc.columnappend2.ColumnAppender2NodeModel.joinTablesWithIdenticalKeys(ColumnAppender2NodeModel.java:273)
+	at org.knime.base.node.preproc.columnappend2.ColumnAppender2NodeModel.execute(ColumnAppender2NodeModel.java:203)
+	at org.knime.core.node.NodeModel.execute(NodeModel.java:812)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-12-17 22:11:16,525 : WARN  : KNIME-Worker-10-Column Appender 3:12 :  : Node : Column Appender : 3:12 : Table 1 is shorter than the longest table. Corresponding columns were filled using missing values.
+2024-12-17 22:11:38,677 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:12 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-12-17 22:11:38,683 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:12 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-12-17 22:11:40,772 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:11 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-12-17 22:11:40,772 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:11 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-12-17 22:13:38,209 : WARN  : comm-pool-thread-10 :  : Node : Create Collection Column : 3:13 : Auto configuration: Using all suitable columns (in total 4)
+2024-12-17 22:14:58,282 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:13 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-12-17 22:14:58,283 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:13 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:12] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-12-17 22:18:40,333 : WARN  : comm-pool-thread-14 :  : Node : Math Formula : 3:12 : No configuration available
+2024-12-17 22:21:00,437 : WARN  : KNIME-Worker-15-Table Creator 3:13 :  : Node : Table Creator : 3:13 : Node created an empty data table.
+2024-12-17 22:23:07,112 : WARN  : KNIME-Worker-17-Concatenate 3:14 :  : AppendedRowsIterator : Concatenate : 3:14 : Table contains duplicate entry "Row0", skipping this row. Suppress further warnings.
+2024-12-17 22:23:07,113 : WARN  : KNIME-Worker-17-Concatenate 3:14 :  : Node : Concatenate : 3:14 : Filtered out 30 duplicate row(s).
+2024-12-17 22:23:45,821 : WARN  : KNIME-Worker-17-Concatenate 3:14 :  : AppendedRowsIterator : Concatenate : 3:14 : Table contains duplicate entry "Row0", skipping this row. Suppress further warnings.
+2024-12-17 22:23:45,822 : WARN  : KNIME-Worker-17-Concatenate 3:14 :  : Node : Concatenate : 3:14 : Filtered out 30 duplicate row(s).
+2024-12-17 22:24:17,327 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:14 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:13] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-12-17 22:24:17,328 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:14 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:10, 3:11, 3:13] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-12-17 22:29:38,679 : WARN  : comm-pool-thread-21 :  : Node : Constant Value Column : 3:15 : Configuration missing.
+2024-12-17 22:32:06,717 : WARN  : comm-pool-thread-22 :  : Node : String Manipulation : 3:17 : No expression has been set.
+2024-12-17 22:34:07,951 : ERROR : KNIME-Worker-21-Column Appender 3:17 :  : Node : Column Appender : 3:17 : Execute failed: Tables can't be joined, non matching row counts: 31 vs. 21
+java.lang.IllegalArgumentException: Tables can't be joined, non matching row counts: 31 vs. 21
+	at org.knime.core.data.container.JoinedTable.create(JoinedTable.java:303)
+	at org.knime.core.data.container.JoinedTable.create(JoinedTable.java:281)
+	at org.knime.core.data.container.BufferedTableBackend.append(BufferedTableBackend.java:168)
+	at org.knime.core.node.ExecutionContext.createJoinedTable(ExecutionContext.java:642)
+	at org.knime.base.node.preproc.columnappend2.ColumnAppender2NodeModel.joinTablesWithIdenticalKeys(ColumnAppender2NodeModel.java:273)
+	at org.knime.base.node.preproc.columnappend2.ColumnAppender2NodeModel.execute(ColumnAppender2NodeModel.java:203)
+	at org.knime.core.node.NodeModel.execute(NodeModel.java:812)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-12-17 22:34:10,471 : ERROR : KNIME-Worker-20-Column Appender 3:17 :  : Node : Column Appender : 3:17 : Execute failed: Tables can't be joined, non matching row counts: 31 vs. 21
+java.lang.IllegalArgumentException: Tables can't be joined, non matching row counts: 31 vs. 21
+	at org.knime.core.data.container.JoinedTable.create(JoinedTable.java:303)
+	at org.knime.core.data.container.JoinedTable.create(JoinedTable.java:281)
+	at org.knime.core.data.container.BufferedTableBackend.append(BufferedTableBackend.java:168)
+	at org.knime.core.node.ExecutionContext.createJoinedTable(ExecutionContext.java:642)
+	at org.knime.base.node.preproc.columnappend2.ColumnAppender2NodeModel.joinTablesWithIdenticalKeys(ColumnAppender2NodeModel.java:273)
+	at org.knime.base.node.preproc.columnappend2.ColumnAppender2NodeModel.execute(ColumnAppender2NodeModel.java:203)
+	at org.knime.core.node.NodeModel.execute(NodeModel.java:812)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-12-17 22:34:18,832 : WARN  : KNIME-Worker-21-Column Appender 3:17 :  : Node : Column Appender : 3:17 : Table 1 is shorter than the longest table. Corresponding columns were filled using missing values.
+2024-12-17 22:34:34,903 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:17 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:11, 3:13, 3:14, 3:15, 3:16] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-12-17 22:34:34,903 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:17 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:11, 3:13, 3:14, 3:15, 3:16] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-12-17 22:40:34,557 : ERROR : KNIME-Worker-25-Column Appender 3:18 :  : Node : Column Appender : 3:18 : Execute failed: Tables can't be joined, non matching row counts: 31 vs. 1
+java.lang.IllegalArgumentException: Tables can't be joined, non matching row counts: 31 vs. 1
+	at org.knime.core.data.container.JoinedTable.create(JoinedTable.java:303)
+	at org.knime.core.data.container.JoinedTable.create(JoinedTable.java:281)
+	at org.knime.core.data.container.BufferedTableBackend.append(BufferedTableBackend.java:168)
+	at org.knime.core.node.ExecutionContext.createJoinedTable(ExecutionContext.java:642)
+	at org.knime.base.node.preproc.columnappend2.ColumnAppender2NodeModel.joinTablesWithIdenticalKeys(ColumnAppender2NodeModel.java:273)
+	at org.knime.base.node.preproc.columnappend2.ColumnAppender2NodeModel.execute(ColumnAppender2NodeModel.java:203)
+	at org.knime.core.node.NodeModel.execute(NodeModel.java:812)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-12-17 22:40:43,871 : WARN  : KNIME-Worker-24-Column Appender 3:18 :  : Node : Column Appender : 3:18 : Table 1 is shorter than the longest table. Corresponding columns were filled using missing values.
+2024-12-17 22:43:34,523 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:16 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:11, 3:13, 3:14, 3:17] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-12-17 22:43:34,528 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:16 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:11, 3:13, 3:14, 3:17] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-12-17 22:48:14,667 : ERROR : KNIME-Worker-27-ARIMA Learner 3:7 :  : Node : ARIMA Learner : 3:7 : Execute failed: This combination of p (23) and q (0) values are too large for the Hannan Rissanen algorithm on this dataset.
+java.lang.IllegalArgumentException: This combination of p (23) and q (0) values are too large for the Hannan Rissanen algorithm on this dataset.
+	at org.knime.arima.node.learner.armalearners.ARMALearnerHannanRissanen.fit(ARMALearnerHannanRissanen.java:116)
+	at org.knime.arima.node.learner.armalearners.ARMALearnerCondLikelihood.fit(ARMALearnerCondLikelihood.java:98)
+	at org.knime.arima.node.learner.ARIMALearnerNodeModel.execute(ARIMALearnerNodeModel.java:212)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-12-17 22:48:34,665 : ERROR : KNIME-Worker-26-ARIMA Learner 3:7 :  : Node : ARIMA Learner : 3:7 : Execute failed: This combination of p (18) and q (1) values are too large for the Hannan Rissanen algorithm on this dataset.
+java.lang.IllegalArgumentException: This combination of p (18) and q (1) values are too large for the Hannan Rissanen algorithm on this dataset.
+	at org.knime.arima.node.learner.armalearners.ARMALearnerHannanRissanen.fit(ARMALearnerHannanRissanen.java:116)
+	at org.knime.arima.node.learner.armalearners.ARMALearnerCondLikelihood.fit(ARMALearnerCondLikelihood.java:98)
+	at org.knime.arima.node.learner.ARIMALearnerNodeModel.execute(ARIMALearnerNodeModel.java:212)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-12-19 23:48:52,816 : WARN  : main :  : Node : Linear Regression Learner : 3:19 : At least one column must be included.
+2024-12-19 23:48:55,591 : WARN  : main :  : Node : Linear Regression Learner : 3:19 : At least one column must be included.
+2024-12-19 23:53:11,685 : WARN  : main :  : Node : Regression Predictor : 3:20 : The table for prediction does not contain the column "Births_per_1000".
+2024-12-19 23:53:12,974 : WARN  : KNIME-Worker-54-Linear Regression Learner 3:19 :  : Node : Regression Predictor : 3:20 : The table for prediction does not contain the column "Births_per_1000".
+2024-12-19 23:53:21,652 : WARN  : main :  : Node : Regression Predictor : 3:20 : The table for prediction does not contain the column "Births_per_1000".
+2024-12-19 23:53:41,320 : WARN  : main :  : Node : Regression Predictor : 3:20 : The table for prediction does not contain the column "Births_per_1000".
+2024-12-19 23:54:36,883 : WARN  : main :  : Node : Regression Predictor : 3:20 : The table for prediction does not contain the column "Year".
+2024-12-19 23:58:02,263 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 3:21 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:11, 3:13, 3:14, 3:17, 3:18, 3:20] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-12-19 23:58:02,269 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 3:21 valid [3:1, 3:2, 3:3, 3:4, 3:5, 3:6, 3:7, 3:8, 3:9, 3:11, 3:13, 3:14, 3:17, 3:18, 3:20] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-12-20 00:02:05,460 : WARN  : comm-pool-thread-44 :  : Node : ARIMA Visualization : 3:19 : The model and the input table specs differ:
+model: name=default,columns=[Year; Births_per_1000]
+input: name=default,columns=[Year]
+2024-12-20 00:02:08,858 : WARN  : comm-pool-thread-44 :  : Node : ARIMA Visualization : 3:19 : The model and the input table specs differ:
+model: name=default,columns=[Year; Births_per_1000]
+input: name=default,columns=[Year]
+2024-12-20 00:23:53,395 : ERROR : KNIME-Worker-92-ARIMA Learner 3:7 :  : Node : ARIMA Learner : 3:7 : Execute failed: This combination of p (5) and q (1) values are too large for the Hannan Rissanen algorithm on this dataset.
+java.lang.IllegalArgumentException: This combination of p (5) and q (1) values are too large for the Hannan Rissanen algorithm on this dataset.
+	at org.knime.arima.node.learner.armalearners.ARMALearnerHannanRissanen.fit(ARMALearnerHannanRissanen.java:116)
+	at org.knime.arima.node.learner.armalearners.ARMALearnerCondLikelihood.fit(ARMALearnerCondLikelihood.java:98)
+	at org.knime.arima.node.learner.ARIMALearnerNodeModel.execute(ARIMALearnerNodeModel.java:212)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-12-20 00:37:34,979 : WARN  : KNIME-Worker-93-ARIMA Learner 3:7 :  : ARMALearner : ARIMA Learner : 3:7 : Optimization problem: Estimated MA polynomial is not invertible.The estimates are not reliable
+2024-12-20 00:38:16,350 : ERROR : KNIME-Worker-97-ARIMA Learner 3:7 :  : Node : ARIMA Learner : 3:7 : Execute failed: This combination of p (5) and q (0) values are too large for the Hannan Rissanen algorithm on this dataset.
+java.lang.IllegalArgumentException: This combination of p (5) and q (0) values are too large for the Hannan Rissanen algorithm on this dataset.
+	at org.knime.arima.node.learner.armalearners.ARMALearnerHannanRissanen.fit(ARMALearnerHannanRissanen.java:116)
+	at org.knime.arima.node.learner.armalearners.ARMALearnerCondLikelihood.fit(ARMALearnerCondLikelihood.java:98)
+	at org.knime.arima.node.learner.ARIMALearnerNodeModel.execute(ARIMALearnerNodeModel.java:212)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
