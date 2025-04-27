@@ -78,7 +78,7 @@ def listener(messages):
             print(str(m.chat.first_name) + " [" + str(m.chat.id) + "]: " + m.text)
 
 
-hbjnmcd_bot = telebot.TeleBot('7152726739:AAH7vH7pTfn8sL9vmvJ1Czl6IqGmgkRRbUI')
+hbjnmcd_bot = telebot.TeleBot('')
 hbjnmcd_bot.set_update_listener(listener)  # register listener
 
 
